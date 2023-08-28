@@ -1,0 +1,32 @@
+@import './styles/vars.scss';
+@import './styles/task.scss';
+@import './styles/modal.scss';
+@import './styles/animation.scss';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKT21t2O2jsKLw4ik93OHV_X9t1RbhNXpf0w&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: $mainColor;
+    align-items: center;
+
+    &__title {
+      padding: 20px;
+      color: $titleTextColor;
+      text-align: center;  
+  }
+
+  }
+

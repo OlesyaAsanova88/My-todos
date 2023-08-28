@@ -1,0 +1,98 @@
+
+.task-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__bottom-section {
+   
+    width: 480px;
+  }
+
+  &__input {
+    margin-top: 50px;
+    width: 480px;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 10px;
+  }
+
+  &__input:focus {
+    box-shadow: 0 0 15px $mainColor;
+    outline: none;
+  }
+
+  &__btn {
+    padding: 10px 206px; 
+    border-radius: 30px;
+    border: 2px solid $mainColor;
+    background-color: #fff;
+    color: $mainColor;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__btn:hover {
+    color: #fff;
+    background-color: $mainColor;
+  }
+
+  &__list {
+
+    &-item {
+      display: flex;
+      padding-bottom: 5px;
+      margin-top: 30px;
+      color: $titleTextColor;
+      list-style: none;
+      border-bottom: 1px solid $mainColor;
+    }
+
+  }
+
+  &__list-btn {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    background-color: #fff;
+    border-radius: 2px;
+  }
+
+  &__link {
+    color: $upColor;
+  }
+
+  &__org {
+    border: 1px solid $upColor;
+    color: $upColor;
+  }
+
+  &__red {
+    border: 1px solid $deleteColor;
+    color: $deleteColor;
+  }
+  &__green {
+    border: 1px solid $mainColor;
+    color: #fff;
+  }
+  
+}
+
+.checked {
+  color: rgba(0, 128, 0, 0.816);
+}
+
+@media (max-width: 450px) {
+    .task-block__input {
+      width: 270px;
+      height: 35px;
+    }
+    .task-block__btn {
+      padding: 10px 100px;
+    }
+    .task-block__bottom-section {
+      width: 300px;
+    }
+  }

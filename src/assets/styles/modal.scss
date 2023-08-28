@@ -1,0 +1,62 @@
+/* свойства модального окна по умолчанию */
+.modal {
+    position: fixed; /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* цвет фона */
+    z-index: 1;
+    -webkit-transition: opacity 200ms ease-in;
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in;
+    margin: 0;
+    padding: 0;
+    backdrop-filter: blur(10px);
+    display: flex;
+    padding-top: 100px;
+    align-items: flex-start;
+    justify-content: center;
+  
+    &__content {
+      max-width: 480px;
+      width: 100%;
+      padding: 30px;
+      border-radius: 5px;
+      background-color: rgba(68, 158, 68, 0.636);
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      &_text {
+        color: #fff;
+        font-size: 26px;
+      }
+  
+      &__input {
+        padding: 12px;
+        border-radius: 5px;
+      }
+  
+      &__buttons {
+        display: flex;
+        gap: 20px;
+        justify-content: flex-end;
+  
+        button {
+          padding: 12px;
+          border-radius: 5px;
+          border: 2px solid $mainColor;
+          background-color: #fff;
+          color: rgba(68, 158, 68, 0.891);
+          font-weight: 900;
+          text-transform: uppercase;
+        }
+        button:hover {
+            color: #fff;
+            background-color: $mainColor;
+          }
+      }
+    }
+  }
+  
